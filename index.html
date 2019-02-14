@@ -7,17 +7,43 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
 </head>
 <body>
+<div class="container" id="questions">
 
-<div class="container">
-  <h2>Contextual Backgrounds</h2>
-  <p>Use the contextual background classes to provide "meaning through colors":</p>
-  <p class="bg-primary">This text is important.</p>
-  <p class="bg-success">This text indicates success.</p>
-  <p class="bg-info">This text represents some information.</p>
-  <p class="bg-warning">This text represents a warning.</p>
-  <p class="bg-danger">This text represents danger.</p>
+<h2>Text Input</h2>
+<div class="container question" name="1">
+
+ <form NAME="myform" ACTION="" METHOD="GET">
+  <h3>Title:</h3> <br>
+  <input type="text" name="title"><br>
+  
+  Answer type: <br>
+  <input type="radio" name="answer-type" value="radio" checked> radio
+  <input type="radio" name="answer-type" value="checkbox"> checkbox<br>
+  
+  <div class="container answer" name="1">
+    Answer<br>
+    <input type="text" name="lastname"><br>
+  </div>
+
+  <div class="container answer" name="2">
+    Answer<br>
+    <input type="text" name="lastname" ><br>
+  </div>
+
+  <div class="container answer" name="1">
+    Answer<br>
+    <input type="text" name="lastname"><br>
+  </div>
+
+ </form>
+ <br> <br>
+</div>
+
+<button id="addQ" onclick="addQuestion()">Ajouter une question</button> 
 </div>
 
 </body>
