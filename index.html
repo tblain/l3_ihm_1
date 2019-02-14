@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
 <header class="bg-dark">
@@ -73,7 +74,39 @@
             </div>
       </div>
   </div>
+ 
+<div class="container" id="questions">
+<h2>Text Input</h2>
+<div class="container question" name="1">
+
+ <form NAME="myform" ACTION="" METHOD="GET">
+  <h3>Title:</h3> <br>
+  <input type="text" name="title"><br>
   
+  Answer type: <br>
+  <input type="radio" name="answer-type" value="radio" checked> radio
+  <input type="radio" name="answer-type" value="checkbox"> checkbox<br>
+  
+  <div class="container answer" name="1">
+    Answer<br>
+    <input type="text" name="lastname"><br>
+  </div>
+
+  <div class="container answer" name="2">
+    Answer<br>
+    <input type="text" name="lastname" ><br>
+  </div>
+
+  <div class="container answer" name="1">
+    Answer<br>
+    <input type="text" name="lastname"><br>
+  </div>
+
+ </form>
+ <br> <br>
+</div>
+
+<button id="addQ" onclick="addQuestion()">Ajouter une question</button> 
 </div>
 
 </body>
