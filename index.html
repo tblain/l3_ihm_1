@@ -4,20 +4,76 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+<header class="bg-dark">
+  <div class="bg-dark collapse" id="navbarHeader">
+    <div class="container">
+        <p class="white-font">TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST</p>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+        <h1 class="white-font">StronQCM</h1>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+  </div>
+</header>
 
 <div class="container">
-  <h2>Contextual Backgrounds</h2>
-  <p>Use the contextual background classes to provide "meaning through colors":</p>
-  <p class="bg-primary">This text is important.</p>
-  <p class="bg-success">This text indicates success.</p>
-  <p class="bg-info">This text represents some information.</p>
-  <p class="bg-warning">This text represents a warning.</p>
-  <p class="bg-danger">This text represents danger.</p>
+  
+  <div class="">
+      <h2 class="fas fa-h2">Titre Parti 1</h2>
+      <div class="jumbotron text-center">
+        <h3>Quelle est la couleur du cheval blanc d'Henrry 4 ?</h3>
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary active">
+            <input type="radio" name="q1" id="r1" autocomplete="off" checked>
+            <p>Rouge</p>
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="q1" id="r2" autocomplete="off">
+            <p>Vert</p>
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="q1" id="r3" autocomplete="off ">
+            <p>Bleu</p>
+          </label>
+          <label class="btn btn-primary">
+              <input type="radio" name="q1" id="r4" autocomplete="off ">
+              <p>Blanc</p>
+            </label>
+        </div>
+        <div class="jumbotron text-center">
+            <h3>Quelle est la couleur du cheval blanc d'Henrry 4 ?</h3>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary active">
+                <input type="radio" name="q2" id="" autocomplete="off" checked>
+                <p>Rouge</p>
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="q2" id="" autocomplete="off">
+                <p>Vert</p>
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="q2" id="" autocomplete="off ">
+                <p>Bleu</p>
+              </label>
+              <label class="btn btn-primary">
+                  <input type="radio" name="q2" id="" autocomplete="off ">
+                  <p>Blanc</p>
+                </label>
+            </div>
+      </div>
+  </div>
+  
 </div>
 
 </body>
