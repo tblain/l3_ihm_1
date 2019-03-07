@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>StronQCM</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body>
@@ -32,47 +35,88 @@
   
   <div class="">
       <h2 class="fas fa-h2">Titre Parti 1</h2>
-      <div class="jumbotron text-center">
-        <h3>Quelle est la couleur du cheval blanc d'Henrry 4 ?</h3>
-        <div class="btn-group" data-toggle="buttons">
-          <label class="btn btn-primary active">
-            <input type="radio" name="q1" id="r1" autocomplete="off" checked>
-            <p>Rouge</p>
-          </label>
-          <label class="btn btn-primary">
-            <input type="radio" name="q1" id="r2" autocomplete="off">
-            <p>Vert</p>
-          </label>
-          <label class="btn btn-primary">
-            <input type="radio" name="q1" id="r3" autocomplete="off ">
-            <p>Bleu</p>
-          </label>
-          <label class="btn btn-primary">
-              <input type="radio" name="q1" id="r4" autocomplete="off ">
-              <p>Blanc</p>
-            </label>
-        </div>
-        <div class="jumbotron text-center">
-            <h3>Quelle est la couleur du cheval blanc d'Henrry 4 ?</h3>
-            <div class="btn-group" data-toggle="buttons">
-              <label class="btn btn-primary active">
-                <input type="radio" name="q2" id="" autocomplete="off" checked>
-                <p>Rouge</p>
-              </label>
-              <label class="btn btn-primary">
-                <input type="radio" name="q2" id="" autocomplete="off">
-                <p>Vert</p>
-              </label>
-              <label class="btn btn-primary">
-                <input type="radio" name="q2" id="" autocomplete="off ">
-                <p>Bleu</p>
-              </label>
-              <label class="btn btn-primary">
-                  <input type="radio" name="q2" id="" autocomplete="off ">
-                  <p>Blanc</p>
+
+      <div class="row component-container">
+        <div class="col-md-12 col-sm-12 col-xs-12 component-section" data-width="col-md-12 col-sm-12 col-xs-12" data-wrapper="bannerwrapper" data-componentname="Banner" data-componenttype="Complex">
+          <div class="panel panel-default banner-component">
+            <div class="jumbotron text-center panel">
+              <h3>Quelle est la couleur du cheval blanc d'Henrry 4 ?</h3>
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                  <input type="radio" name="q1" id="r1" autocomplete="off" checked>
+                  <p>Rouge</p>
                 </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="q1" id="r2" autocomplete="off">
+                  <p>Vert</p>
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="q1" id="r3" autocomplete="off ">
+                  <p>Bleu</p>
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="q1" id="r4" autocomplete="off ">
+                    <p>Blanc</p>
+                  </label>
+              </div>
             </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12 component-section" data-width="col-md-12 col-sm-12 col-xs-12" data-wrapper="bannerwrapper" data-componentname="Banner" data-componenttype="Complex">
+          <div class="panel panel-default banner-component">
+            <div class="jumbotron text-center panel">
+              <h3>2+2 ?</h3>
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                  <input type="radio" name="q1" id="r1" autocomplete="off" checked>
+                  <p>Rouge</p>
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="q1" id="r2" autocomplete="off">
+                  <p>42?</p>
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="q1" id="r3" autocomplete="off ">
+                  <p>1 les jours impairs et 2 quand ça va bien</p>
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="q1" id="r4" autocomplete="off ">
+                    <p>2</p>
+                  </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12 component-section" data-width="col-md-12 col-sm-12 col-xs-12" data-wrapper="bannerwrapper" data-componentname="Banner" data-componenttype="Complex">
+          <div class="panel panel-default banner-component">
+            <div class="jumbotron text-center panel">
+              <h3>Quelle est la couleur du cheval blanc d'Henrry 4 ?</h3>
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                  <input type="radio" name="q1" id="r1" autocomplete="off" checked>
+                  <p>Rouge</p>
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="q1" id="r2" autocomplete="off">
+                  <p>Vert</p>
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="q1" id="r3" autocomplete="off ">
+                  <p>Bleu</p>
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="q1" id="r4" autocomplete="off ">
+                    <p>Blanc</p>
+                  </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
+
   </div>
  
 <div class="container" id="questions">
