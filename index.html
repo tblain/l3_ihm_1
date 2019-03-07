@@ -14,6 +14,7 @@
   <script src="js/main.js"></script>
 </head>
 <body>
+
 <header class="bg-dark">
   <div class="bg-dark collapse" id="navbarHeader">
     <div class="container">
@@ -126,34 +127,41 @@
 
   </div>
  
+<button id="addQ" onclick="addQuestion(this)">Ajouter une question</button> 
 <div class="container" id="questions">
-<h2>Text Input</h2>
-<div class="container question" name="1">
 
- <form NAME="myform" ACTION="" METHOD="GET">
+<h2>Text Input</h2>
+<div class="container question">
+
   <h3>Title:</h3> <br>
   <input type="text" name="title"><br>
   
   Answer type: <br>
   <input type="radio" name="answer-type" value="radio" checked> radio
   <input type="radio" name="answer-type" value="checkbox"> checkbox<br>
-  
-  <div class="container answer" name="1">
-    Answer<br>
-    <input type="text" name="lastname"><br>
+   
+  <div class="container answers">
+    <div class="container answer 1">
+      Answer<br>
+      <input type="text" name="lastname">
+     <button class="delA" onclick="delA(this)">X</button>
+    </div>
+
+    <div class="container answer 2">
+      Answer<br>
+      <input type="text" name="lastname" >
+     <button class="delA" onclick="delA(this)">X</button>
+    </div>
+
+    <div class="container answer 3">
+      Answer<br>
+      <input type="text" name="lastname">
+     <button class="delA" onclick="delA(this)">X</button>
+    </div>
+    <button class="addA" onclick="addA(this)">Ajouter une reponse</button>
+    <button class="delQ" onclick="delQ(this)">Supprimer la question</button> 
   </div>
 
-  <div class="container answer" name="2">
-    Answer<br>
-    <input type="text" name="lastname" ><br>
-  </div>
-
-  <div class="container answer" name="1">
-    Answer<br>
-    <input type="text" name="lastname"><br>
-  </div>
-
- </form>
  <br> <br>
 </div>
 </div>
