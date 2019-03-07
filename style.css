@@ -4,3 +4,13 @@
 .white-font{
     color: white;
 }
+
+.floating-right{
+
+    float: right;
+}
+.fill-line{
+width: -webkit-fill-available;
+overflow: auto;
+margin: 10px;
+}
