@@ -11,6 +11,8 @@ $(document).ready(function() {
   });
 });
 
+var i = 0;
+
 function addA(id) {
   var parentNode = id.parentNode;
   var answer = parentNode.children[0];
@@ -20,19 +22,26 @@ function addA(id) {
 }
 
 function delQ(id) {
-  var test = id.parentNode.parentNode.parentNode;
-  test.remove();
+  var question = id.parentNode.parentNode;
+  question.remove();
 }
 
 function delA(id) {
-  var test = id.parentNode;
-  test.remove();
+  var answer = id.parentNode;
+  answer.remove();
 }
 
 function addQuestion(id) {
   var itms = document.getElementsByClassName("question");
   var itm = itms[itms.length-1];
   var cln = itm.cloneNode(true);
+  var radio1 = cln.children[4];
+  var radio2 = cln.children[5];
+  i = i + 1
+  radio1.name = "answer-type" + i;
+  radio2.name = "answer-type" + i;
+  console.log(radio1);
+  
   var main_cont = document.getElementById("questions");
   main_cont.append(cln);
 }
