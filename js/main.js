@@ -1,3 +1,10 @@
+//document.body.addEventListener("load", initQ);
+
+var itms;
+function initQ(){
+  itms = document.getElementsByClassName("question")[0].cloneNode(true);
+  document.getElementsByClassName("question")[0].remove();
+}
 
 $(document).ready(function() {
   $('.component-container').sortable({
@@ -31,17 +38,7 @@ function delA(id) {
   answer.remove();
 }
 
-function addQuestion(id) {
-  var itms = document.getElementsByClassName("question");
-  var itm = itms[itms.length-1];
-  var cln = itm.cloneNode(true);
-  var radio1 = cln.children[4];
-  var radio2 = cln.children[5];
-  i = i + 1
-  radio1.name = "answer-type" + i;
-  radio2.name = "answer-type" + i;
-  console.log(radio1);
-  
+function addQuestion(id) { 
   var main_cont = document.getElementById("questions");
-  main_cont.append(cln);
+  main_cont.append(itms.cloneNode(true));
 }

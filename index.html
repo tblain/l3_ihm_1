@@ -13,7 +13,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="js/main.js"></script>
 </head>
-<body>
+<body onload="initQ()">
 
 <header class="bg-dark">
   <div class="bg-dark collapse" id="navbarHeader">
@@ -32,6 +32,8 @@
   </div>
 </header>
 
+
+
 <div class="container">
   
   <div class="">
@@ -39,6 +41,42 @@
       
       <div class="fill-line">
         <button class = "btn btn-primary floating-right" id="addQ" onclick="addQuestion()">Ajouter une question</button> 
+      </div>
+
+      <div class="container" id="questions">
+        <div class="question col-md-12 col-sm-12 col-xs-12 component-section" data-width="col-md-12 col-sm-12 col-xs-12" data-wrapper="bannerwrapper" data-componentname="Banner" data-componenttype="Complex">
+          <div class="panel panel-default banner-component">
+            <div class="jumbotron text-center panel">
+              <input type="text" class="text-center form-control" placeholder="Ecrire votre Question ....." name="title">
+              
+              <div class="btn-group answers" data-toggle="buttons">
+                <label class="btn btn-primary container answer 1">
+                  <input type="text" class="text-center form-control" placeholder="Reponse" name="title">
+                  <button class="delA btn-danger" onclick="delA(this)">X</button>
+                </label>
+                <label class="btn btn-primary container answer 2">
+                  <input type="text" class="text-center form-control" placeholder="Reponse" name="title">
+                  <button class="delA btn-danger" onclick="delA(this)">X</button>
+                </label>
+                <label class="btn btn-primary container answer 3">
+                  <input type="text" class="text-center form-control" placeholder="Reponse" name="title">
+                  <button class="delA btn-danger" onclick="delA(this)">X</button>
+                </label>
+                <label class="btn btn-primary container answer 4">
+                    <input type="text" class="text-center form-control" placeholder="Reponse" name="title">
+                    <button class="delA btn-danger" onclick="delA(this)">X</button>
+                </label>
+                <label class="btn btn-success container addA" onclick="addA(this)">
+                    <p class="add-btn">+</p>
+                </label>
+                
+              </div>
+
+              <button class="delA btn btn-primary active btn-danger" onclick="delA(this)">X</button>
+
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="row component-container">
@@ -65,7 +103,7 @@
                   </label>
               </div>
 
-              <button class="delA btn btn-primary active" onclick="delA(this)">X</button>
+              <button class="delA btn btn-danger" onclick="delA(this)">X</button>
             </div>
           </div>
         </div>
@@ -93,7 +131,7 @@
                   </label>
               </div>
 
-              <button class="delA btn btn-primary active" onclick="delA(this)">X</button>
+              <button class="delA btn btn-danger" onclick="delA(this)">X</button>
             </div>
           </div>
         </div>
@@ -121,7 +159,7 @@
                   </label>
               </div>
 
-              <button class="delA btn btn-primary active" onclick="delA(this)">X</button>
+              <button class="delA btn btn-danger" onclick="delA(this)">X</button>
             </div>
           </div>
         </div>
@@ -132,45 +170,6 @@
       </div>
 
   </div>
- 
-<button id="addQ" onclick="addQuestion(this)">Ajouter une question</button> 
-<div class="container" id="questions">
-
-<h2>Text Input</h2>
-<div class="container question">
-
-  <h3>Title:</h3>
-  <input type="text" name="title"><br>
-  
-  Answer type: <br>
-  <input type="radio" name="answer-type0" value="radio" checked> radio
-  <input type="radio" name="answer-type0" value="checkbox"> checkbox<br>
-   
-  <div class="container answers">
-    <div class="container answer 1">
-      Answer<br>
-      <input type="text" name="lastname">
-     <button class="delA" onclick="delA(this)">X</button>
-    </div>
-
-    <div class="container answer 2">
-      Answer<br>
-      <input type="text" name="lastname" >
-     <button class="delA" onclick="delA(this)">X</button>
-    </div>
-
-    <div class="container answer 3">
-      Answer<br>
-      <input type="text" name="lastname">
-     <button class="delA" onclick="delA(this)">X</button>
-    </div>
-    <button class="addA" onclick="addA(this)">Ajouter une reponse</button>
-    <button class="delQ" onclick="delQ(this)">Supprimer la question</button> 
-  </div>
-
- <br> <br>
-</div>
-</div>
 
 </body>
 </html>

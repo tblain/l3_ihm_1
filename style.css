@@ -14,3 +14,7 @@ width: -webkit-fill-available;
 overflow: auto;
 margin: 10px;
 }
+
+.add-btn{
+    margin: 22px 0 22px 0;
+}
