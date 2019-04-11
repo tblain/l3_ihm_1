@@ -9,6 +9,19 @@
 
     float: right;
 }
+.margin-delbtn{
+    margin: 20px;
+}
+.icone-changementOrdre{
+    width: 2.5%;
+    float: left;
+}
+.icone-changementOrdre{
+    width: 2.5%;
+    float: left;
+    cursor: grab;
+}
+
 .fill-line{
 width: -webkit-fill-available;
 overflow: auto;
